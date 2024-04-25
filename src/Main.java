@@ -5,9 +5,9 @@ public class Main {
         //task 1
         int year = 2024;
         if (checkLeapYear(year)) {
-            System.out.println("Год высокосный");
+            System.out.println("Год " + year + " высокосный");
         } else {
-            System.out.println("Год невысокосный");
+            System.out.println("Год " + year + " невысокосный");
 
         }
         //task 2
@@ -18,7 +18,7 @@ public class Main {
         int distanceDelivery = 45;
         int deliveryDays = calculateDeliveryDays(distanceDelivery);
         if (deliveryDays >= 0) {
-            System.out.println("Доставка займет " + deliveryDays + " дня ");
+            System.out.println("Доставка займет " + deliveryDays + " дней ");
         } else {
             System.out.println("Доставки нет ");
         }
@@ -40,7 +40,7 @@ public class Main {
                 System.out.println("Скачайте версию для ios");
             }
         } else if (ios == 1) {
-            if (deviceYear < currentYear) {
+            if (deviceYear != currentYear) {
                 System.out.println("Скачайте облегченную версию android ");
             } else {
                 System.out.println("Скачайте версию для android");
